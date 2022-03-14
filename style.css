@@ -169,12 +169,18 @@ input:focus {
  
   @media screen and (max-width: 850px) {
   
+    .credits{
+        position: relative;
+    }
+
     .container{
       flex-direction: column;
     }
     .image-container{
         width: 100vw;
         height: 20rem;
+        display: flex;
+        flex-direction: column;
       }
     .hero{
         margin: auto;
