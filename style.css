@@ -192,7 +192,7 @@ input:focus {
         margin: 10xp;
         padding: auto;
     }
-    
+
     .input-section{
         flex-direction: column;
         align-items: center;
@@ -200,6 +200,11 @@ input:focus {
         margin: auto;
         padding: auto;
     }
+    .form{
+        justify-content: center;
+        align-items: center;
+    }
+
 
     .footer{
         display: flex;
