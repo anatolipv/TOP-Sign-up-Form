@@ -6,7 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Norse-Bold;
+    font-family: NorseBold;
     }
  
 .container{
@@ -71,7 +71,8 @@ h1{
 .header{
     background-color: rgba(202, 202, 202,0.5);
     flex: 1;
-    padding: 15% 10% 5% 5%;
+    padding: 20% 10% 5% 5%;
+    font-size: 25px;
     
 }
 
@@ -98,6 +99,7 @@ label{
     flex-direction: column;
     margin: 2%;
     color: #596D48;
+    font-size: 25px;
 }
 
 /* Footer */
@@ -122,7 +124,12 @@ button{
     border-radius: 5px;
     width: 180px;
     height: 40px;
-    font-size: 1em;
+    font-size: 25px;
+}
+
+
+button:hover{
+    background-color: #8bbe5e;
 }
 
 p{
@@ -130,14 +137,15 @@ p{
 }
 
 .error {
-    font-family: NorseBold;
-    font-size: .7rem;
-    color: rgb(255, 69, 100);
-    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: red;
+    
   }
 
 /* input */
-input{
+input {
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
     border: 2px solid rgba(202, 202, 202,0.3);
     border-radius: 5px;
@@ -159,3 +167,30 @@ input:focus {
     border: rgb(0, 183, 255) 2px solid;
   }
  
+  @media screen and (max-width: 850px) {
+  
+    .container{
+      flex-direction: column;
+    }
+    .image-container{
+        width: 100vw;
+        height: 20rem;
+      }
+    .hero{
+        margin: auto;
+    }
+    h2,h3, label{
+        text-align: center;
+    }
+    .header,h3{
+        margin: 10xp;
+        padding: auto;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  }
